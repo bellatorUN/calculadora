@@ -1,24 +1,22 @@
+while True:
+    numero1 = int(input('Digite o primeiro número'))
+    operacao = (input('Digite qual operação quer realizar(+, -, *, /)'))    
+    numero2 = int(input('Digite o segundo número'))
 
-operacao = (input('Digite qual operação quer realizar(+, -, *, /)'))
-    
+    if operacao == '+':
+        resultado = numero1 + numero2
+        print(resultado)
 
-numero1 = int(input('Digite o primeiro número'))
-numero2 = int(input('Digite o segundo número'))
+    elif operacao == '-':
+        resultado = numero1 - numero2
+        print(resultado)
 
-if operacao == '+':
-    resultado = numero1 + numero2
-    print(resultado)
+    elif operacao == '*':
+        resultado = numero1 * numero2
+        print(resultado)
 
-elif operacao == '-':
-    resultado = numero1 - numero2
-    print(resultado)
-
-elif operacao == '*':
-    resultado = numero1 * numero2
-    print(resultado)
-
-elif operacao == '/':
-    resultado = numero1 / numero2
-    print(resultado)
-else: 
-    print('Operação inválida')    
+    elif operacao == '/':
+        resultado = numero1 / numero2
+        print(resultado)
+    else: 
+        print('Operação inválida')    
